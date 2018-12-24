@@ -1,0 +1,5 @@
+equal:2
+equal:4
+equal:5
+equal:3
+equal:1
