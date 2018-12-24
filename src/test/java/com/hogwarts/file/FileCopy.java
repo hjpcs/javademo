@@ -22,8 +22,8 @@ public class FileCopy {
     }
 
     public static void main(String[] args) throws InterruptedException, IOException {
-        File source = new File("D:\\idea\\project\\javademo\\src\\main\\resources\\a.txt");
-        File dest = new File("D:\\idea\\project\\javademo\\src\\main\\resources\\a_cp.txt");
+        File source = new File("C:\\Users\\hejp25215\\Downloads\\S.N.R.Rikon\\SP.rmvb");
+        File dest = new File("C:\\Users\\hejp25215\\Downloads\\S.N.R.Rikon\\SP_cp.rmvb");
         long start = System.nanoTime();
         fileCopy(source, dest);
         long end = System.nanoTime();
