@@ -13,6 +13,7 @@ import java.io.FileOutputStream;
 
 public class GenerateSQL {
 
+    // 将生成的sql写入sql文件中
     public void writeToFile(String path, String str) throws Exception {
         BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(path, true));
         bos.write(str.getBytes());
