@@ -43,7 +43,7 @@ public class GenerateSQL {
                     HSSFCell cell2 = row.getCell(2);
                     HSSFCell cell3 = row.getCell(3);
 
-
+                    // 判空操作
                     if (cell1.getStringCellValue().trim() == null || "".equals(cell1.getStringCellValue().trim()) ||
                             cell2.getStringCellValue().trim() == null || "".equals(cell2.getStringCellValue().trim())) {
                         continue;
