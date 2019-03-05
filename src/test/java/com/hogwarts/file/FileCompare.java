@@ -64,6 +64,8 @@ public class FileCompare {
             if (searchText.equals(compareLine)) {
                 lineStr ="equal:" + lineNum + "\n";
                 break;
+            } else {
+                lineStr = searchText + "\n";
             }
             lineNum++;
         }
