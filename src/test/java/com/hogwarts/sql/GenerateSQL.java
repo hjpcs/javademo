@@ -194,23 +194,29 @@ public class GenerateSQL {
                     HSSFCell cell3 = row.getCell(3);
 
 
-                    if (cell0 == null || cell1 == null || cell2 == null) {
+                    if (cell1.getStringCellValue().trim() == null || "".equals(cell1.getStringCellValue().trim()) ||
+                            cell2.getStringCellValue().trim() == null || "".equals(cell2.getStringCellValue().trim())) {
                         continue;
                     } else if (cell0.getStringCellValue().contains("近一月") && cell3.getStringCellValue().contains("有区间")){
-                        str = "select * from "+cell1.getStringCellValue().trim()+
-                                " where "+cell2.getStringCellValue().trim()+" is null and interval_type=1 limit 10;\n";
+                        str = "select '"+cell0.getStringCellValue().trim()+"' as name, count("+cell2.getStringCellValue().trim()
+                                +") as tag_num, count(*) as total_num, (1-count("+cell2.getStringCellValue().trim()
+                                +")/count(*)) as null_rate from "+cell1.getStringCellValue().trim()+" where interval_type=1 union\n";
                     } else if (cell0.getStringCellValue().contains("近三月") && cell3.getStringCellValue().contains("有区间")){
-                        str = "select * from "+cell1.getStringCellValue().trim()+
-                                " where "+cell2.getStringCellValue().trim()+" is null and interval_type=2 limit 10;\n";
+                        str = "select '"+cell0.getStringCellValue().trim()+"' as name, count("+cell2.getStringCellValue().trim()
+                                +") as tag_num, count(*) as total_num, (1-count("+cell2.getStringCellValue().trim()
+                                +")/count(*)) as null_rate from "+cell1.getStringCellValue().trim()+" where interval_type=2 union\n";
                     } else if (cell0.getStringCellValue().contains("近半年") && cell3.getStringCellValue().contains("有区间")){
-                        str = "select * from "+cell1.getStringCellValue().trim()+
-                                " where "+cell2.getStringCellValue().trim()+" is null and interval_type=3 limit 10;\n";
+                        str = "select '"+cell0.getStringCellValue().trim()+"' as name, count("+cell2.getStringCellValue().trim()
+                                +") as tag_num, count(*) as total_num, (1-count("+cell2.getStringCellValue().trim()
+                                +")/count(*)) as null_rate from "+cell1.getStringCellValue().trim()+" where interval_type=3 union\n";
                     } else if (cell0.getStringCellValue().contains("近一年") && cell3.getStringCellValue().contains("有区间")){
-                        str = "select * from "+cell1.getStringCellValue().trim()+
-                                " where "+cell2.getStringCellValue().trim()+" is null and interval_type=4 limit 10;\n";
+                        str = "select '"+cell0.getStringCellValue().trim()+"' as name, count("+cell2.getStringCellValue().trim()
+                                +") as tag_num, count(*) as total_num, (1-count("+cell2.getStringCellValue().trim()
+                                +")/count(*)) as null_rate from "+cell1.getStringCellValue().trim()+" where interval_type=4 union\n";
                     } else {
-                        str = "select * from "+cell1.getStringCellValue().trim()+
-                                " where "+cell2.getStringCellValue().trim()+" is null limit 10;\n";
+                        str = "select '"+cell0.getStringCellValue().trim()+"' as name, count("+cell2.getStringCellValue().trim()
+                                +") as tag_num, count(*) as total_num, (1-count("+cell2.getStringCellValue().trim()
+                                +")/count(*)) as null_rate from "+cell1.getStringCellValue().trim()+" union\n";
                     }
                 }
                 String path = "D:\\idea\\project\\javademo\\src\\main\\resources\\null.sql";

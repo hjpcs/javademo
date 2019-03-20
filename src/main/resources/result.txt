@@ -1,4 +1,4 @@
--
+equal:2
 equal:3
 equal:4
 equal:5
@@ -36,7 +36,7 @@ equal:122
 equal:132
 equal:133
 equal:134
-每日证券仓位（资产账户）
+equal:110
 equal:128
 equal:129
 equal:135
@@ -86,7 +86,7 @@ equal:82
 equal:83
 equal:84
 equal:85
-交易回合内最大持仓市值
+交易回合内最大持仓市值(用的最大成本)
 近一年板块交易金额（申万二级）
 equal:170
 equal:171
