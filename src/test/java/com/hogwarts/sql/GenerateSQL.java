@@ -23,7 +23,7 @@ public class GenerateSQL {
 
     @Test
     public void generateMaxAndMin() throws Exception {
-        FileInputStream fis =new FileInputStream("D:\\idea\\project\\javademo\\src\\main\\resources\\sql.xls");
+        FileInputStream fis =new FileInputStream("D:\\idea\\project\\javademo\\src\\main\\resources\\taglist.xls");
         POIFSFileSystem fs = new POIFSFileSystem(fis);
         //创建工作簿
         HSSFWorkbook wb = new HSSFWorkbook(fs);
@@ -72,6 +72,12 @@ public class GenerateSQL {
                                 "cast(min("+cell2.getStringCellValue().trim()+") as string) as min " +
                                 "from "+cell1.getStringCellValue().trim()+
                                 " where interval_type=4 union\n";
+                    } else if (cell0.getStringCellValue().contains("近一周") && cell3.getStringCellValue().contains("有区间")){
+                        str = "select '"+cell0.getStringCellValue().trim()+"' as name, " +
+                                "cast(max("+cell2.getStringCellValue().trim()+") as string) as max, " +
+                                "cast(min("+cell2.getStringCellValue().trim()+") as string) as min " +
+                                "from "+cell1.getStringCellValue().trim()+
+                                " where interval_type=5 union\n";
                     } else {
                         str = "select '"+cell0.getStringCellValue().trim()+"' as name, " +
                                 "cast(max("+cell2.getStringCellValue().trim()+") as string) as max, " +
@@ -79,7 +85,7 @@ public class GenerateSQL {
                                 "from "+cell1.getStringCellValue().trim()+" union\n";
                     }
                 }
-                String path = "D:\\idea\\project\\javademo\\src\\main\\resources\\sql.sql";
+                String path = "D:\\idea\\project\\javademo\\src\\main\\resources\\MaxAndMin.sql";
                 writeToFile(path, str);
             }
         }
@@ -126,13 +132,17 @@ public class GenerateSQL {
                         str = "select distinct("+cell2.getStringCellValue().trim()+") as '" +
                                 cell0.getStringCellValue().trim()+"' from " +
                                 cell1.getStringCellValue().trim()+" where interval_type=4;\n";
+                    } else if (cell0.getStringCellValue().contains("近一周") && cell3.getStringCellValue().contains("有区间")){
+                        str = "select distinct("+cell2.getStringCellValue().trim()+") as '" +
+                                cell0.getStringCellValue().trim()+"' from " +
+                                cell1.getStringCellValue().trim()+" where interval_type=5;\n";
                     } else {
                         str = "select distinct("+cell2.getStringCellValue().trim()+") as '" +
                                 cell0.getStringCellValue().trim()+"' from " +
                                 cell1.getStringCellValue().trim()+";\n";
                     }
                 }
-                String path = "D:\\idea\\project\\javademo\\src\\main\\resources\\dict.sql";
+                String path = "D:\\idea\\project\\javademo\\src\\main\\resources\\Dictionary.sql";
                 writeToFile(path, str);
             }
         }
@@ -164,7 +174,7 @@ public class GenerateSQL {
                         str = "desc "+cell0.getStringCellValue().trim()+";\n";
                     }
                 }
-                String path = "D:\\idea\\project\\javademo\\src\\main\\resources\\desc.sql";
+                String path = "D:\\idea\\project\\javademo\\src\\main\\resources\\Description.sql";
                 writeToFile(path, str);
             }
         }
@@ -172,7 +182,7 @@ public class GenerateSQL {
 
     @Test
     public void generateNull() throws Exception {
-        FileInputStream fis =new FileInputStream("D:\\idea\\project\\javademo\\src\\main\\resources\\sql.xls");
+        FileInputStream fis =new FileInputStream("D:\\idea\\project\\javademo\\src\\main\\resources\\taglist.xls");
         POIFSFileSystem fs = new POIFSFileSystem(fis);
         //创建工作簿
         HSSFWorkbook wb = new HSSFWorkbook(fs);
@@ -219,7 +229,7 @@ public class GenerateSQL {
                                 +")/count(*)) as null_rate from "+cell1.getStringCellValue().trim()+" union\n";
                     }
                 }
-                String path = "D:\\idea\\project\\javademo\\src\\main\\resources\\null.sql";
+                String path = "D:\\idea\\project\\javademo\\src\\main\\resources\\NullRate.sql";
                 writeToFile(path, str);
             }
         }

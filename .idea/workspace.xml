@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d320d17d-bade-4c9d-8b3a-84eb980d345e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/cmp1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cmp1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/cmp2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cmp2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/result.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/result.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dict.xls" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/hogwarts/sql/GenerateSQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/hogwarts/sql/GenerateSQL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cmp1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cmp1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cmp2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cmp2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/result.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/result.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dict.xls" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,38 +26,11 @@
       <file leaf-file-name="GenerateSQL.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/hogwarts/sql/GenerateSQL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2926">
-              <caret line="190" column="52" lean-forward="true" selection-start-line="190" selection-start-column="52" selection-end-line="190" selection-end-column="52" />
+            <state relative-caret-position="211">
+              <caret line="194" column="27" lean-forward="true" selection-start-line="194" selection-start-column="27" selection-end-line="194" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cmp1.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/cmp1.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="267" selection-start-line="267" selection-end-line="267" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cmp2.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/cmp2.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="278" selection-start-line="278" selection-end-line="278" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="33" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -257,7 +225,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FileCompare">
+  <component name="RunManager" selected="JUnit.GenerateSQL.generateNull">
     <configuration name="FileCompare" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.hogwarts.file.FileCompare" />
       <module name="javademo" />
@@ -411,9 +379,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FileCompare" />
-        <item itemvalue="JUnit.GenerateSQL.generateMaxAndMin" />
         <item itemvalue="JUnit.GenerateSQL.generateNull" />
+        <item itemvalue="JUnit.GenerateSQL.generateMaxAndMin" />
+        <item itemvalue="Application.FileCompare" />
         <item itemvalue="JUnit.GenerateSQL.generateDict" />
         <item itemvalue="JUnit.GenerateSQL.generateDesc" />
       </list>
@@ -445,7 +413,7 @@
       <workItem from="1551850814606" duration="729000" />
       <workItem from="1552359233708" duration="1546000" />
       <workItem from="1552526728398" duration="903000" />
-      <workItem from="1553044656715" duration="1779000" />
+      <workItem from="1553044656715" duration="4965000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1545638302488</created>
@@ -496,16 +464,17 @@
       <option name="project" value="LOCAL" />
       <updated>1551772761030</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="update">
+      <created>1553046724541</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1553046724541</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GenerateSQL_generateNull - 2019.02.20 at 11h 00m 35s.xml">
-      <configuration name="GenerateSQL.generateNull" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GenerateSQL_generateNull - 2019.02.20 at 11h 02m 48s.xml">
-      <configuration name="GenerateSQL.generateNull" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="GenerateSQL_generateMaxAndMin - 2019.03.04 at 17h 19m 57s.xml">
       <configuration name="GenerateSQL.generateMaxAndMin" configurationId="JUnit" />
     </history-entry>
@@ -530,9 +499,15 @@
     <history-entry file="GenerateSQL_generateMaxAndMin - 2019.03.04 at 19h 01m 51s.xml">
       <configuration name="GenerateSQL.generateMaxAndMin" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="GenerateSQL_generateMaxAndMin - 2019.03.20 at 16h 18m 45s.xml">
+      <configuration name="GenerateSQL.generateMaxAndMin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GenerateSQL_generateNull - 2019.03.20 at 16h 18m 53s.xml">
+      <configuration name="GenerateSQL.generateNull" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71246000" />
+    <option name="totallyTimeSpent" value="74432000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -549,6 +524,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32702237" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32874355" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -560,7 +536,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32874355" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49569708" visible="true" weight="0.2624811" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49569708" visible="true" weight="0.2624811" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" sideWeight="0.5043029" side_tool="true" visible="true" weight="0.2624811" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -570,7 +546,6 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39862543" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32874355" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -1001,8 +976,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/hogwarts/sql/GenerateSQL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2926">
-          <caret line="190" column="52" lean-forward="true" selection-start-line="190" selection-start-column="52" selection-end-line="190" selection-end-column="52" />
+        <state relative-caret-position="211">
+          <caret line="194" column="27" lean-forward="true" selection-start-line="194" selection-start-column="27" selection-end-line="194" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
